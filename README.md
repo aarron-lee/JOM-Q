@@ -24,6 +24,10 @@ The HTMLElements will be wrapped in a `NodeCollection` object, which has an API 
 
 If the arg is an HTMLElement, it will return the element wrapped in a `NodeCollection` object.
 
+`$JOM(function)`
+
+If the arg is a function, it will run the function after the DOM loads.
+
 
 ### NodeCollection API
 
