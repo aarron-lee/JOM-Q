@@ -4,15 +4,10 @@
     <meta charset="utf-8">
     <script type="text/javascript" src="./lib/JOM_Q.js"></script>
     <title>JOM-Q Todos</title>
-
     <link rel="stylesheet" type="text/css" href="./reset.css" />
     <link rel="stylesheet" type="text/css" href="./style.css" />
-
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-
-
     <script>
-      var counter = 0;
       let addListener = ()=>{
         $JOM('#todo-form').on("submit", (e)=>{
           e.preventDefault();
@@ -26,29 +21,26 @@
         });
       }
       $JOM(addListener)
-
     </script>
-
   </head>
-  <body>
 
-  <div id="app">
-    <div id="todo-container">
-      <div>
-        <h2>JOM Todo List</h2>
-      </div>
-      <div style="width: 100%;">
-        <ul id="todo-list">
-        </ul>
-      </div>
-      <div>
-        <form id="todo-form">
-          <input type="text" name="todo-title" placeholder="Type title here...">
-          <input type="submit"></input>
-        </form>
+  <body>
+    <div id="app">
+      <div id="todo-container">
+        <div>
+          <h2>JOM Todo List</h2>
+        </div>
+        <div style="width: 100%;">
+          <ul id="todo-list">
+          </ul>
+        </div>
+        <div>
+          <form id="todo-form">
+            <input type="text" name="todo-title" placeholder="Type title here...">
+            <input type="submit"></input>
+          </form>
+        </div>
       </div>
     </div>
-  </div>
-
   </body>
 </html>
