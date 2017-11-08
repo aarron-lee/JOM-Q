@@ -57,14 +57,16 @@ h2{
   padding: 10px;
   background-color: white;
   border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
 }
 
 #todo-form input[name=todo-title]{
-  width: 73%;
+  min-width: 80%;
+  margin-right: 10px;
 }
 
 #todo-form input[type=submit]{
-  width: 20%;
   background-color: gray;
   padding: 5px;
   border-radius: 5px;
