@@ -3,12 +3,46 @@
   <head>
     <meta charset="utf-8">
     <script type="text/javascript" src="./lib/JOM_Q.js"></script>
-    <title>JOM-Q</title>
+    <title>JOM-Q Todos</title>
+
+    <link rel="stylesheet" type="text/css" href="./reset.css" />
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+
+    <script>
+      let addListener = ()=>{
+        $JOM('#todo-form').on("submit", (e)=>{
+          e.preventDefault();
+          let newTodo = $JOM('#todo-form input').DOMelements[0].value;
+          if(newTodo.length > 0){
+            $JOM('#todo-list').append(`<li>${newTodo}</li>`);
+            $JOM('#todo-form input').DOMelements[0].value = '';
+          }else{
+            alert('invalid todo length');
+          }
+        });
+      }
+      $JOM(addListener)
+
+    </script>
+
   </head>
   <body>
 
-  <ul id="todo-list">
-  </ul>
+  <div id="app">
+    <div id="todo-container">
+      <h2>Todo List</h2>
+      <ul id="todo-list">
+      </ul>
+
+      <form id="todo-form">
+        <input type="text" name="todo-title" placeholder="Type title here...">
+        <input type="submit"></input>
+      </form>
+    </div>
+  </div>
 
   </body>
 </html>
