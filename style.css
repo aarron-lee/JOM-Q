@@ -65,9 +65,16 @@ h2{
 }
 
 #todo-form input[name=todo-title]{
-  min-width: 80%;
+  max-width: 30%;
   margin-right: 10px;
 }
+
+@media  (min-width : 1224px) {
+  #todo-form input[name=todo-title]{
+    min-width: 80%;
+  }
+}
+
 
 #todo-form input[type=submit]{
   background-color: gray;
