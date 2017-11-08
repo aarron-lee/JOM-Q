@@ -108,3 +108,10 @@ An event listener is added, uses the eventCallBack.
 `$JOM().off(eventType)`
 
 All event listeners are removed from the NodeCollection.
+
+
+### Example use
+
+basic JOM todo list implemented in index.html.
+
+![JOM todo](JOM.png)
