@@ -1,0 +1,11 @@
+{
+  "name": "JOM-Q",
+  "version": "1.0.0",
+  "description": "SimpleJOM-Q todo list",
+  "scripts": {
+    "start": "harp server --port $PORT"
+  },
+  "dependencies": {
+    "harp": "*"
+  }
+}
