@@ -110,7 +110,7 @@ An event listener is added, uses the eventCallBack.
 All event listeners are removed from the NodeCollection.
 
 
-### Example use
+# Example use
 
 basic JOM todo list implemented in index.html.
 
