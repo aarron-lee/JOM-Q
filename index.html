@@ -12,6 +12,7 @@
 
 
     <script>
+      var counter = 0;
       let addListener = ()=>{
         $JOM('#todo-form').on("submit", (e)=>{
           e.preventDefault();
@@ -33,7 +34,7 @@
 
   <div id="app">
     <div id="todo-container">
-      <h2>Todo List</h2>
+      <h2>JOM Todo List</h2>
       <ul id="todo-list">
       </ul>
 
