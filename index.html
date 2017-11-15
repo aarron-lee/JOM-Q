@@ -3,44 +3,39 @@
   <head>
     <meta charset="utf-8">
     <script type="text/javascript" src="./lib/JOM_Q.js"></script>
-    <title>JOM-Q Todos</title>
+    <title>JOM-Q Game</title>
     <link rel="stylesheet" type="text/css" href="./reset.css" />
     <link rel="stylesheet" type="text/css" href="./style.css" />
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <script>
-      let addListener = ()=>{
-        $JOM('#todo-form').on("submit", (e)=>{
-          e.preventDefault();
-          let newTodo = $JOM('#todo-form input').DOMelements[0].value;
-          if(newTodo.length > 0){
-            $JOM('#todo-list').append(`<li>${newTodo}</li>`);
-            $JOM('#todo-form input').DOMelements[0].value = '';
-          }else{
-            alert('invalid todo length');
-          }
-        });
-      }
-      $JOM(addListener)
-    </script>
   </head>
 
   <body>
-    <div id="app">
-      <div id="todo-container">
-        <div>
-          <h2>JOM Todo List</h2>
-        </div>
-        <div style="width: 100%;">
-          <ul id="todo-list">
-          </ul>
-        </div>
-        <div>
-          <form id="todo-form">
-            <input type="text" name="todo-title" placeholder="Type title here...">
-            <input type="submit"></input>
-          </form>
-        </div>
-      </div>
+
+  <div id="app">
+
+    <div class="app-col">
+
     </div>
-  </body>
+
+    <div class="app-col">
+      <div id="content">
+
+        <h2>JOM Memory Game</h2>
+        <p>Remember the Blue Squares</p>
+        <div id="game-board">
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="app-col">
+
+    </div>
+
+  <div>
+
+  <script type="text/javascript" src="./lib/game.js"></script>
+
 </html>
