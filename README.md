@@ -1,6 +1,12 @@
 # JOM-Q
 jQuery implementation using vanilla JS
 
+# Example use
+
+basic Memory Game implemented with JOM.
+
+![JOM Game](JOM2.png)
+
 
 ## Usage
 
@@ -109,9 +115,3 @@ An event listener is added, uses the eventCallBack.
 
 All event listeners are removed from the NodeCollection.
 
-
-# Example use
-
-basic JOM todo list implemented in index.html.
-
-![JOM todo](JOM.png)
